@@ -2,10 +2,10 @@ console.log("code is running...");
 
 // import { sub as subtract, sum } from "./calc.js";
 
-import * as calc from "./calc.js"; // using namespace
+import * as calc from "../modules/calc.js"; // using namespace
 
 // import sayMyName from "./whoami.js";
-import { sayMyAge, default as sayMyName } from "./whoami.js";
+import { sayMyAge, default as sayMyName } from "../modules/whoami.js";
 
 console.log(sayMyName("Adam"));
 console.log(sayMyAge(4));
