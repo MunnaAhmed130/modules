@@ -1,4 +1,4 @@
-const { sub, sum } = require("./modules/calc");
+const { sub, sum } = require("./modules/calc.js");
 const { sayMyAge, sayMyName } = require("./whoami");
 
 console.log(sayMyName("Adam"));
