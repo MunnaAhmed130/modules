@@ -6,7 +6,7 @@ if (true) {
     console.log(combine.sayMyAge(3));
 }
 
-// like this too
+// like this too - import multiple module with promise api
 const promises = Promise.all([
     await import("./modules/calc.js"),
     await import("./modules/whoami.js"),
