@@ -9,12 +9,13 @@ if (true) {
 
 // console.log(await import("./modules/combine.js"));
 
-const combine = import("./modules/combine.js").then((result) =>
-    console.log(result)
-);
+// const combine = import("./modules/combine.js").then((result) =>
+//     console.log(result)
+// );
+const combine = await import("./modules/combine.js");
+console.log(combine.calc.default(5, 5));
 
-// console.log(combine);
-
+const value = 31;
 // like this too - import multiple module with promise api
 
 const promises = Promise.all([
